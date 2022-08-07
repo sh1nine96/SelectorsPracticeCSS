@@ -1,0 +1,68 @@
+.animation {
+    width: 100px;
+    height: 100px;
+    animation-name: colourchange;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colourchange {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: cadetblue;
+    }
+}
+
+.fix {
+    margin-top: 10px;
+    height: 400px;
+    width: 500px;
+    border: 2px solid rebeccapurple;
+}
+
+.rotate {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: rosybrown;
+        left: 400px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: seagreen;
+        left: 400px;
+        top: 300px;
+    }
+
+    75% {
+        background-color: tomato;
+        left: 0px;
+        top: 300px;
+    }
+
+    100% {
+        background-color: springgreen;
+        left: 0px;
+        top: 0px;
+    }
+}

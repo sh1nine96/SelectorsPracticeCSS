@@ -1,0 +1,96 @@
+/* Simple Selectors */
+body{
+    background-color: rgb(212, 189, 159);
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Class Selectors */
+.MenuStyling{
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 23%;
+    height: 100px;
+    background-color: indianred;
+    border: 2px solid peru;
+}
+
+.MenuStyling:active{
+    background-color: grey;
+}
+
+#helpdesk{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: royalblue;
+    background-color: powderblue;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* 1. Descendent Selector */
+.MenuStyling p{
+    color: rgb(26, 7, 7);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.LoanStyling:active{
+    background-color: khaki;
+}
+
+.LoanStyling {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 31%;
+    height: 200px;
+    background-color: rgb(155, 189, 104);
+    border: 2px solid peru;
+}
+
+/* 2. child Selector */
+.LoanStyling >p{
+    color: red;
+}
+
+/* 3. Adjacent Selectors */
+#LoansType + p{
+    color: red;
+}
+
+.InvestmentStyling{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 20%;
+    height: 180px;
+    background-color: rgb(201, 96, 174);
+    border: 2px solid peru;
+}
+
+.InvestmentStyling:active{
+    background-color: slateblue;
+}
+
+/* 4. General Sibling Selector */
+#InvestType ~ p {
+    color: blueviolet;
+}

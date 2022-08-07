@@ -1,0 +1,40 @@
+/* Simple Selectors */
+body{
+    background-color: rgb(212, 189, 159);
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Class Selectors */
+.MenuStyling{
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 23%;
+    height: 100px;
+    background-color: indianred;
+    border: 2px solid peru;
+}
+
+.MenuStyling:active{
+    background-color: grey;
+}
+
+#helpdesk{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: royalblue;
+    background-color: powderblue;
+    border-radius: 5px;
+    font-weight: bold;
+}

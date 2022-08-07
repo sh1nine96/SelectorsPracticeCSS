@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide&Display</title>
+    <style>
+        .A,
+        .C,
+        .E {
+            background-color: aqua;
+            border: 2px solid black;
+
+        }
+
+        .B {
+            display: none;
+        }
+
+        /* used to diplay class B when hovered upon class A */
+        .A:hover+.B {
+            display: block;
+        }
+
+        /* check the difference between visibility and display block  */
+        .D {
+            visibility: hidden;
+        }
+
+        .C:hover+.D {
+            visibility: visible;
+        }
+
+        .F {
+            visibility: collapse;
+        }
+
+        .E:hover+.F {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="A">Hover me for diplay: none property</p>
+    <span class="B">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+
+    <p class="C">Hover me to see visibility: hidden</p>
+    <p class="D">Helloo......</p>
+
+    <p class="E">Hover me to see visibility: collapse</p>
+    <table class="F">
+        <tr>
+            <th>One</th>
+            <th>Two</th>
+        </tr>
+        <tr>
+            <td>sdbkj</td>
+            <td>abkllk</td>
+        </tr>
+    </table>
+
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quas suscipit aliquam modi aut harum
+            perferendis, magni quos nesciunt iste repellat, delectus accusantium tenetur doloribus repellendus?
+            Cupiditate aperiam ex provident odit possimus ut nemo reiciendis eligendi?</p>
+    </div>
+
+</body>
+
+</html>
